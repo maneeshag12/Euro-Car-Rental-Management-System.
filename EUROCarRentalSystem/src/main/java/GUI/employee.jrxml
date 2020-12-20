@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="610ee07a-610f-4c30-9c7e-9ed521b1dda6">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM employee]]>
+	</queryString>
+	<field name="empID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="empName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="empAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="designation" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="empcontactNo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="empEmail" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="empNIC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="empJoinedDate" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="basicSallary" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Availability" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="145" y="10" width="291" height="56" uuid="9513de54-d60a-4de4-a300-03a745df8b60"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="24"/>
+				</textElement>
+				<text><![CDATA[Euro Rent a Car & Travels]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="50" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="28" height="20" uuid="6f0bf0c3-af17-401a-bcbb-2f033e0aa064"/>
+				<textFieldExpression><![CDATA[$F{empID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="28" y="0" width="90" height="20" uuid="e07a8345-3488-40b1-b88a-ce90edd5c094"/>
+				<textFieldExpression><![CDATA[$F{empName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="118" y="0" width="80" height="20" uuid="2940a981-64fd-4df0-a2ee-e69781a7e671"/>
+				<textFieldExpression><![CDATA[$F{empAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="198" y="0" width="63" height="20" uuid="0c7708ce-aea1-4f14-b798-bc6253716ecb"/>
+				<textFieldExpression><![CDATA[$F{designation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="261" y="0" width="84" height="20" uuid="73cb5c11-5707-4318-83eb-1aa9c13df487"/>
+				<textFieldExpression><![CDATA[$F{empcontactNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="0" width="91" height="20" uuid="5f9e082b-1a2c-4e00-b2e0-c57965c95b15"/>
+				<textFieldExpression><![CDATA[$F{empNIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="436" y="0" width="64" height="20" uuid="3975b133-6e27-4084-aa4f-0f39048145dd"/>
+				<textFieldExpression><![CDATA[$F{empJoinedDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="55" height="20" uuid="f327950d-b295-4f34-ad92-2b20f6176437"/>
+				<textFieldExpression><![CDATA[$F{basicSallary}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="38" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="37" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="33" splitType="Stretch"/>
+	</summary>
+</jasperReport>

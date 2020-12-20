@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="1300" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="83e23b88-d127-41eb-9f3b-2f84eddb3671">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM vehicle v INNER JOIN supplier s on v.vehicleNo = s.vehicleNo]]>
+	</queryString>
+	<field name="vehicleID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vehicleNo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="make" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="model" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mileage" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="year" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pickupDate" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="returnDate" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rate" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="imagePath" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="availability" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="supplierID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="supplierName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="supplierAddress" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="supplierNIC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="supplierContactNo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="supplierEmail" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="458" y="23" width="331" height="56" uuid="52def71b-861e-4e66-8f65-ef876569d67a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="24"/>
+				</textElement>
+				<text><![CDATA[Euro Rent a Car & Travels]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="102" height="20" uuid="b99e65e2-5ecf-41a1-853b-ddd042365c36"/>
+				<textElement textAlignment="Justified">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[supplierName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="112" y="0" width="146" height="20" uuid="aec18c33-b6a4-482f-929a-c88ce624c55d"/>
+				<textElement textAlignment="Justified">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[supplierAddress]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="258" y="2" width="100" height="20" uuid="0c6f47c3-dc1b-4985-b69a-1b6911214d52"/>
+				<textElement textAlignment="Justified">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[supplierNIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="358" y="2" width="110" height="33" uuid="e73534c4-4f1e-4b6c-856c-e6d2ba536cc1"/>
+				<textElement textAlignment="Justified">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[supplierContactNo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="486" y="0" width="161" height="20" uuid="4648807a-c5b0-4178-ab78-e52df98cd342"/>
+				<textElement textAlignment="Justified">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[supplierEmail]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="647" y="4" width="100" height="20" uuid="70a2a296-7442-4957-9e04-6772ee602c19"/>
+				<textElement textAlignment="Justified">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[vehicleNo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="747" y="4" width="100" height="20" uuid="c53aa73c-df63-4bb2-8ff1-cc924d379227"/>
+				<textElement textAlignment="Justified">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[make]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="847" y="4" width="100" height="20" uuid="25335f6c-e333-4d69-9c49-876f7e298cca"/>
+				<textElement textAlignment="Justified">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[model]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="947" y="4" width="100" height="20" uuid="6b1719a7-7e00-4097-98d4-5f39d6dab135"/>
+				<textElement textAlignment="Justified">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[pickupDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1047" y="2" width="100" height="20" uuid="66192ab4-67fa-4e67-8413-0b58c8e7e121"/>
+				<textElement textAlignment="Justified">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[returnDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1158" y="4" width="100" height="20" uuid="f153fb4c-3820-4e67-ad95-d180a8ddc9fc"/>
+				<textElement textAlignment="Justified">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[rate]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="38" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="102" height="38" uuid="0c5f8e7a-c2e0-404e-8349-113168922b47"/>
+				<textFieldExpression><![CDATA[$F{supplierName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="112" y="0" width="146" height="38" uuid="6fa9d08e-93ef-405c-abd1-1e2020501689"/>
+				<textFieldExpression><![CDATA[$F{supplierAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="258" y="2" width="100" height="20" uuid="69bd8c1e-885b-41ef-81fd-c2073b734226"/>
+				<textFieldExpression><![CDATA[$F{supplierNIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="358" y="0" width="110" height="20" uuid="61f2671b-b9ff-4560-bdb0-f8922181ee67"/>
+				<textFieldExpression><![CDATA[$F{supplierContactNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="486" y="0" width="161" height="38" uuid="0dffc827-714a-4451-aa1a-693be0b30e91"/>
+				<textFieldExpression><![CDATA[$F{supplierEmail}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="647" y="2" width="100" height="20" uuid="a16016df-0cf4-4250-9722-d5be45225d22"/>
+				<textFieldExpression><![CDATA[$F{vehicleNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="747" y="2" width="100" height="20" uuid="27cac195-dbb1-4e6a-93a2-4e4dd4d4a31d"/>
+				<textFieldExpression><![CDATA[$F{make}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="847" y="2" width="100" height="20" uuid="dd09ca39-6ca1-401e-8b8a-817315077e63"/>
+				<textFieldExpression><![CDATA[$F{model}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="947" y="2" width="100" height="20" uuid="65294f8c-b7ae-4b85-a07b-44cce0bf5569"/>
+				<textFieldExpression><![CDATA[$F{pickupDate}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="1047" y="2" width="100" height="20" uuid="13ee9212-8041-4234-9988-f2c1cfc7f4bb"/>
+				<textFieldExpression><![CDATA[$F{returnDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1158" y="2" width="100" height="20" uuid="50254980-3cf4-439c-9cbd-d6fee2b9f6b8"/>
+				<textFieldExpression><![CDATA[$F{rate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

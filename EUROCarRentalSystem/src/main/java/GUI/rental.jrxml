@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c4a29144-1abc-461d-8117-7cfc909ceaf9">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM customer c INNER JOIN rental r on r.cusID = c.cusID]]>
+	</queryString>
+	<field name="cusID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cusName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cusNIC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vehicleNo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="renPickupDate" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="renReturndate" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="renTotal" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="135" y="0" width="291" height="56" uuid="f99d071f-f81a-4d30-be4d-ce0643ecc845"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="24"/>
+				</textElement>
+				<text><![CDATA[Euro Rent a Car & Travels]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="60" height="20" uuid="f340e7a2-e120-49e3-87da-c49c83b3467b"/>
+				<text><![CDATA[Cust.ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="0" width="75" height="20" uuid="c5b112af-dcf7-446b-804e-8826c2eb5506"/>
+				<text><![CDATA[Customer Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="148" y="0" width="88" height="20" uuid="48882c14-39e2-4cf6-a89c-0b862afd1b29"/>
+				<text><![CDATA[Customer NIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="236" y="0" width="83" height="20" uuid="97643e4b-c563-44bd-95a5-e6486e72b101"/>
+				<text><![CDATA[Vehicle No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="319" y="0" width="64" height="20" uuid="5fdeca02-b4bd-4205-bb4a-66ee2d64bb1f"/>
+				<text><![CDATA[Pickup Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="383" y="0" width="64" height="20" uuid="e0d1bcf7-c5f1-426a-b5f9-1bcab7debca9"/>
+				<text><![CDATA[Return Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="0" width="100" height="20" uuid="ad14b257-d0b0-49fe-851f-642d8d2496c2"/>
+				<text><![CDATA[Rental Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="60" height="20" uuid="c8d067f3-d2ea-4836-b07a-1c5a48d2e119"/>
+				<textFieldExpression><![CDATA[$F{cusID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="1" width="75" height="20" uuid="d3fe732b-c7aa-45bd-9a35-9b19ad270d8d"/>
+				<textFieldExpression><![CDATA[$F{cusName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="0" width="88" height="20" uuid="aaf14bc5-282b-444c-a17f-0d12979549c7"/>
+				<textFieldExpression><![CDATA[$F{cusNIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="236" y="0" width="83" height="20" uuid="60227308-2150-4428-815d-f79283b3d877"/>
+				<textFieldExpression><![CDATA[$F{vehicleNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="319" y="0" width="64" height="20" uuid="227edbc5-dfd2-41e8-ab6f-ec98db86ef64"/>
+				<textFieldExpression><![CDATA[$F{renPickupDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="383" y="1" width="64" height="20" uuid="bfc2fa8a-d016-400a-b5b9-cecddfa00f18"/>
+				<textFieldExpression><![CDATA[$F{renReturndate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="0" width="100" height="20" uuid="12013391-ab14-4be0-8b12-825b0b8f5a91"/>
+				<textFieldExpression><![CDATA[$F{renTotal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

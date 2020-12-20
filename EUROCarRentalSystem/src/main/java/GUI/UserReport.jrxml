@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="800" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="abdf4c89-a947-441e-9159-684200b5b17e">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="48"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM user]]>
+	</queryString>
+	<field name="userID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="username" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="password" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="usertype" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="displayName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="userStatus" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="62" splitType="Stretch">
+			<staticText>
+				<reportElement x="27" y="0" width="700" height="55" uuid="ca70b70f-acb6-4891-a444-c19ec7c0a12c"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[EURO RENT A CAR & TRAVELS (PVT.) LTD.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="332" y="35" width="100" height="20" uuid="ddc12ab3-6eda-4946-ad1e-ef00411e88f2"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[User Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="2" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="138" y="3" width="59" height="20" uuid="40c56a9d-9f17-424d-bb22-9fa551554ef0"/>
+				<text><![CDATA[userID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="197" y="3" width="100" height="20" uuid="2381a73d-2e8b-4018-b42f-e78e4ba4241a"/>
+				<text><![CDATA[username]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="297" y="3" width="100" height="20" uuid="2fc3fb16-d651-4158-8576-97c7a865353e"/>
+				<text><![CDATA[usertype]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="397" y="3" width="113" height="20" uuid="afa1a2e8-6ffe-4306-9c65-42453bfcf582"/>
+				<text><![CDATA[displayName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="510" y="3" width="100" height="20" uuid="ec08cd17-e647-4487-bbf6-a4df3a966c82"/>
+				<text><![CDATA[userStatus]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="138" y="0" width="59" height="20" uuid="9c530a2a-f2eb-40d0-8e89-2de40a697f2d"/>
+				<textFieldExpression><![CDATA[$F{userID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="197" y="0" width="100" height="20" uuid="e5e494ab-f138-4b10-bb73-8e69cba0451d"/>
+				<textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="0" width="100" height="20" uuid="a47d3851-8f88-439f-a4e3-ee3550645cd6"/>
+				<textFieldExpression><![CDATA[$F{usertype}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="397" y="0" width="113" height="20" uuid="0222fb4c-8d46-47a8-977a-c79b665dd647"/>
+				<textFieldExpression><![CDATA[$F{displayName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="0" width="100" height="20" uuid="5e41ed45-d6d8-429a-ad4c-027dccd85fa4"/>
+				<textFieldExpression><![CDATA[$F{userStatus}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
